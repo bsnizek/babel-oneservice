@@ -4,14 +4,10 @@
  */ /** */
 
 
-// import { ng as angular } from './angular';
-// import {FooService} from "./one";
-//
-// const module = angular.module('babel-oneservice', []);
-// module.service('FooService', FooService);
+import { ng as angular } from './angular';
+import {FooService} from "./services";
 
-declare const _default: "babel-oneservice";
-export default _default;
+const module = angular.module('babel-oneservice', []);
+module.service('FooService', FooService);
 
-// export * from './services';
-// export default 'babel-oneservice';
+export default "babel-oneservice";

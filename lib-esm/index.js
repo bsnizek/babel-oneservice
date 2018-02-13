@@ -2,7 +2,9 @@
  * Main entry point for angular 1.x build
  * @module ng1
  */ /** */
-export default _default;
-// export * from './services';
-// export default 'babel-oneservice';
+import { ng as angular } from './angular';
+import { FooService } from "./services";
+var module = angular.module('babel-oneservice', []);
+module.service('FooService', FooService);
+export default "babel-oneservice";
 //# sourceMappingURL=index.js.map
