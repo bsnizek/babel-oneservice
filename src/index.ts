@@ -3,11 +3,6 @@
  * @module ng1
  */ /** */
 
+ import {FooService} from "./services";
 
-import { ng as angular } from './angular';
-import {FooService} from "./services";
-
-const module = angular.module('babel-oneservice', []);
-module.service('FooService', FooService);
-
-export default "babel-oneservice";
+ export default "babel-oneservice";
