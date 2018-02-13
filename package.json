@@ -1,7 +1,7 @@
 {
   "name": "babel-oneservice",
   "version": "0.0.1",
-  "main": "lib-esm/index.js",
+  "jsnext:main": "lib-esm/index.js",
   "scripts": {
     "compile": "tsc && tsc -m es6 --outDir lib-esm && npm run fixdts",
     "fixdts": "dts-downlevel 'lib/**/*.d.ts' 'lib-esm/**/*.d.ts'"
